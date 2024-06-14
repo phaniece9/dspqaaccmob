@@ -1,0 +1,5 @@
+com\accura\dsp\steps\StepLandingScreenElements.class
+com\accura\dsp\tasks\Menuclicktask.class
+com\accura\dsp\runner\TestRunner.class
+com\accura\dsp\tasks\Landingscreentask.class
+com\accura\dsp\definitions\LandingScreendefinition.class

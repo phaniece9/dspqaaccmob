@@ -1,0 +1,60 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-14T13:57:38.708Z",
+        "line": 2,
+        "name": "When open the home screen and display accura vehicles",
+        "description": "",
+        "id": "verify-the-landing-screen-for-accura;when-open-the-home-screen-and-display-accura-vehicles",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 44782099600,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open the URL",
+            "match": {
+              "location": "com.accura.dsp.definitions.LandingScreendefinition.iOpenTheURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3322396600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "verify the accura logo",
+            "match": {
+              "location": "com.accura.dsp.definitions.LandingScreendefinition.verifyTheAccuraLogo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6352949500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "verify the menu list present",
+            "match": {
+              "location": "com.accura.dsp.definitions.LandingScreendefinition.verifyTheMenuListPresent()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify the landing screen for accura",
+    "description": "",
+    "id": "verify-the-landing-screen-for-accura",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/LandingScreen.feature",
+    "tags": []
+  }
+]
