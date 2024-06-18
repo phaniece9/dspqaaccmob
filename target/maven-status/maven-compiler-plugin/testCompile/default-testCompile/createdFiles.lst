@@ -1,5 +1,10 @@
 com\accura\dsp\steps\StepLandingScreenElements.class
+com\accura\dsp\tasks\ChangeLocationTask.class
 com\accura\dsp\tasks\Menuclicktask.class
+com\accura\dsp\tasks\ClickLocationTask.class
 com\accura\dsp\runner\TestRunner.class
 com\accura\dsp\tasks\Landingscreentask.class
 com\accura\dsp\definitions\LandingScreendefinition.class
+com\accura\dsp\tasks\ClickShoppingToolsTask.class
+com\accura\dsp\tasks\SearchInventoryTask.class
+com\accura\dsp\tasks\ChangedLocationTask.class

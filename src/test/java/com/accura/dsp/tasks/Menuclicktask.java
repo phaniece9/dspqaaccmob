@@ -12,7 +12,7 @@ public class Menuclicktask implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
 
-      actor.attemptsTo(Click.on((WebElementFacade) StepLandingScreenElements.menuclick));
+      actor.attemptsTo(Click.on(StepLandingScreenElements.menuclick));
     }
     public static  Menuclicktask menuclicktask()
     {
