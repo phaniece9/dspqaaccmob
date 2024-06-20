@@ -2,12 +2,14 @@ package com.accura.dsp.definitions;
 
 import com.accura.dsp.steps.StepLandingScreenElements;
 import com.accura.dsp.tasks.*;
+import io.appium.java_client.AppiumDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
@@ -23,6 +25,8 @@ import org.openqa.selenium.WebElement;
 import java.net.MalformedURLException;
 import java.time.Duration;
 
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+
 //import net.serenitybdd.annotations.Managed;
 //import net.serenitybdd.annotations.Managed;
 //import net.serenitybdd.screenplay.ensure.Ensure;
@@ -30,7 +34,7 @@ import java.time.Duration;
 public class LandingScreendefinition {
     @Managed(driver = "Appium")
     public WebDriver driver;
-   //AppiumDriver driver;
+    //AppiumDriver driver;
     String actorName="honda";
     Actor actor = Actor.named(actorName);
 
@@ -55,7 +59,9 @@ public class LandingScreendefinition {
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         driver.get("https://www.acura.com/");*/
-        actor.attemptsTo(Open.url("https://www.acura.com/"));
+        actor.attemptsTo(Open.url("https://AHM%5CUAT_AHM:xGgW8Ssb@akamai-staging2.acura.com/"));
+        //https://AHM%5CUAT_AHM:xGgW8Ssb@akamai-staging2.acura.com/
+        //zdxtest42+alvaradorubia@gmail.com", "Tekion@123
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         Thread.sleep(7000);
     }
@@ -107,6 +113,7 @@ public class LandingScreendefinition {
         //actor.attemptsTo(Menuclicktask.menuclicktask());
         Thread.sleep(6000);
         //Assertions.assertEquals("90703",StepLandingScreenElements.changed_location,"Location is changed to 90703");
+        //actor.should(seeThat((Question<Boolean>) StepLandingScreenElements.changed_location));
         String currentcode=driver.findElement(By.xpath("//span[@class='acr-nav-geo__location-zip acr-caption-10 js-current-zip']")).getText();
         Assertions.assertEquals("90703",currentcode,"Location is changed to 90703");
         actor.attemptsTo(Ensure.that((Target) StepLandingScreenElements.changed_location).isDisplayed());

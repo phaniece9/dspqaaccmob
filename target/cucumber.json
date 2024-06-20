@@ -3,18 +3,30 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-06-18T05:56:48.499Z",
+        "start_timestamp": "2024-06-18T11:57:10.885Z",
         "line": 3,
-        "name": "When open the home screen and display accura vehicles",
+        "name": "Successful sign in",
         "description": "",
-        "id": "verify-the-landing-screen-for-accura;when-open-the-home-screen-and-display-accura-vehicles",
+        "id": "sign-in-to-accura;successful-sign-in",
+        "after": [
+          {
+            "result": {
+              "duration": 40004500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "net.serenitybdd.cucumber.actors.StageDirector.endTheAct()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 115647982300,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException: No BaseStepListener has been registered - are you running your test using the Serenity runners?\r\n\tat com.google.common.base.Preconditions.checkNotNull(Preconditions.java:907)\r\n\tat net.thucydides.core.steps.StepEventBus.getBaseStepListener(StepEventBus.java:153)\r\n\tat net.thucydides.core.steps.StepEventBus.updateOverallResults(StepEventBus.java:821)\r\n\tat net.serenitybdd.screenplay.EventBusInterface.updateOverallResult(EventBusInterface.java:34)\r\n\tat net.serenitybdd.screenplay.Actor.perform(Actor.java:255)\r\n\tat net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:187)\r\n\tat com.accura.dsp.definitions.LandingScreendefinition.iOpenTheURL(LandingScreendefinition.java:58)\r\n\tat ✽.I open the URL(file:///G:/ser/dspqaaccmob/src/test/resources/features/SigninScreen.feature:4)\r\n",
+              "duration": 50969335900,
+              "status": "failed"
             },
             "line": 4,
             "name": "I open the URL",
@@ -25,117 +37,41 @@
           },
           {
             "result": {
-              "duration": 14146007400,
-              "status": "passed"
+              "duration": 1995300,
+              "status": "skipped"
             },
             "line": 5,
-            "name": "I am on the landing screen",
+            "name": "the user enters valid credentials",
             "match": {
-              "location": "com.accura.dsp.definitions.LandingScreendefinition.iAmOnTheLandingScreen()"
+              "location": "com.accura.dsp.definitions.SigninScreendefinition.theUserEntersValidCredentials()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5904955100,
-              "status": "passed"
+              "duration": 998700,
+              "status": "skipped"
             },
             "line": 6,
-            "name": "verify the menu list present",
+            "name": "the user should be signed in successfully",
             "match": {
-              "location": "com.accura.dsp.definitions.LandingScreendefinition.verifyTheMenuListPresent()"
+              "location": "com.accura.dsp.definitions.SigninScreendefinition.theUserShouldBeSignedInSuccessfully()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-06-18T05:59:11.835Z",
-        "line": 9,
-        "name": "Naigate to Vehicle search screen",
-        "description": "",
-        "id": "verify-the-landing-screen-for-accura;naigate-to-vehicle-search-screen",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 40631053800,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I open the URL",
-            "match": {
-              "location": "com.accura.dsp.definitions.LandingScreendefinition.iOpenTheURL()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 7681808600,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I am on the landing screen",
-            "match": {
-              "location": "com.accura.dsp.definitions.LandingScreendefinition.iAmOnTheLandingScreen()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 12350532300,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "I change the location",
-            "match": {
-              "location": "com.accura.dsp.definitions.LandingScreendefinition.iChangeTheLocation()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7079931300,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Verify Location is changed",
-            "match": {
-              "location": "com.accura.dsp.definitions.LandingScreendefinition.verifyLocationIsChanged()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 30111478800,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Navigate to Vehicle search page",
-            "match": {
-              "location": "com.accura.dsp.definitions.LandingScreendefinition.navigateToVehicleSearchPage()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Regression"
+            "name": "@signing"
           }
         ]
       }
     ],
-    "name": "Verify the landing screen for accura",
+    "name": "Sign in to Accura",
     "description": "",
-    "id": "verify-the-landing-screen-for-accura",
+    "id": "sign-in-to-accura",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/LandingScreen.feature",
+    "uri": "file:src/test/resources/features/SigninScreen.feature",
     "tags": []
   }
 ]
