@@ -1,5 +1,7 @@
 G:\ser\dspqaaccmob\src\test\java\com\accura\dsp\definitions\LandingScreendefinition.java
+G:\ser\dspqaaccmob\src\test\java\com\accura\dsp\definitions\SigninScreendefinition.java
 G:\ser\dspqaaccmob\src\test\java\com\accura\dsp\runner\TestRunner.java
+G:\ser\dspqaaccmob\src\test\java\com\accura\dsp\steps\SigninScreenElements.java
 G:\ser\dspqaaccmob\src\test\java\com\accura\dsp\steps\StepLandingScreenElements.java
 G:\ser\dspqaaccmob\src\test\java\com\accura\dsp\tasks\ChangedLocationTask.java
 G:\ser\dspqaaccmob\src\test\java\com\accura\dsp\tasks\ChangeLocationTask.java
@@ -7,4 +9,9 @@ G:\ser\dspqaaccmob\src\test\java\com\accura\dsp\tasks\ClickLocationTask.java
 G:\ser\dspqaaccmob\src\test\java\com\accura\dsp\tasks\ClickShoppingToolsTask.java
 G:\ser\dspqaaccmob\src\test\java\com\accura\dsp\tasks\Landingscreentask.java
 G:\ser\dspqaaccmob\src\test\java\com\accura\dsp\tasks\Menuclicktask.java
+G:\ser\dspqaaccmob\src\test\java\com\accura\dsp\tasks\MyaccountTask.java
 G:\ser\dspqaaccmob\src\test\java\com\accura\dsp\tasks\SearchInventoryTask.java
+G:\ser\dspqaaccmob\src\test\java\com\accura\dsp\tasks\SiginProfileTask.java
+G:\ser\dspqaaccmob\src\test\java\com\accura\dsp\tasks\Signinbuttontask.java
+G:\ser\dspqaaccmob\src\test\java\com\accura\dsp\tasks\SigninTask.java
+G:\ser\dspqaaccmob\src\test\java\com\accura\dsp\tasks\SignoutTask.java
